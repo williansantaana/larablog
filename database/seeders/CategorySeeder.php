@@ -13,6 +13,6 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        Category::factory(['name' => 'Uncategorized']);
+        Category::factory(['name' => 'Uncategorized'])->create();
     }
 }
