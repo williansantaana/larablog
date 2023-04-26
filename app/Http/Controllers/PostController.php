@@ -16,7 +16,7 @@ class PostController extends Controller
     {
         $posts = Post::all();
 
-        return view('index', ['posts' => $posts]);
+        return view('home', ['posts' => $posts]);
     }
 
     public function store(Request $request): RedirectResponse
