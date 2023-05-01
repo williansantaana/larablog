@@ -11,12 +11,15 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 /**
  * @method static create(array $input)
  * @method static find(mixed $id)
+ * @method static where(string $string, $id)
  */
 class Post extends Model
 {
     use HasFactory;
 
     protected $fillable = [
+        'user_id',
+        'category_id',
         'title',
         'content',
         'cover',
@@ -34,7 +37,7 @@ class Post extends Model
 
     public function tags(): BelongsToMany
     {
-        return $this->belongsToMany(Tag::class, 'posts_tags');
+        return $this->belongsToMany(Tag::class, 'post_tags');
     }
 
     public function comments(): HasMany

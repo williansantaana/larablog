@@ -14,5 +14,20 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         Category::factory(['name' => 'Uncategorized'])->create();
+        Category::factory(['name' => 'Routing'])->create();
+        Category::factory(['name' => 'Middleware'])->create();
+        Category::factory(['name' => 'Controllers'])->create();
+        Category::factory(['name' => 'Views'])->create();
+        Category::factory(['name' => 'Models'])->create();
+        Category::factory(['name' => 'Eloquent ORM'])->create();
+        Category::factory(['name' => 'Artisan Console'])->create();
+        Category::factory(['name' => 'Security'])->create();
+        Category::factory(['name' => 'Migrations'])->create();
+        Category::factory(['name' => 'Form Validation'])->create();
+        Category::factory(['name' => 'Queues'])->create();
+        Category::factory(['name' => 'Broadcasting'])->create();
+        Category::factory(['name' => 'Notifications'])->create();
+        Category::factory(['name' => 'Testing'])->create();
+        Category::factory(['name' => 'API Development'])->create();
     }
 }

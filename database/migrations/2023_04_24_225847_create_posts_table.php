@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('CASCADE')->onUpdate('CASCADE');
-            $table->foreignId('category_id')->constrained()->onDelete('CASCADE')->onUpdate('CASCADE')->default('Uncategorized');
+            $table->foreignId('category_id')->constrained()->onDelete('CASCADE')->onUpdate('CASCADE');
             $table->string('title');
             $table->longText('content');
             $table->string('cover')->nullable();

@@ -1,0 +1,30 @@
+.ck-reset_all :not(.ck-reset_all-excluded *), .ck.ck-reset_all {
+    color: white !important;
+}
+
+.ck.ck-button.ck-off:hover, a.ck.ck-button.ck-off:hover {
+    background: #2d3748 !important;
+}
+
+.ck.ck-button.ck-on, a.ck.ck-button.ck-on {
+    background: #2d3748 !important;
+}
+
+.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar, .ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners {
+    background: #1a202c !important;
+    border: 1px solid #4a5568 !important;
+    border-radius: 5px !important;
+    margin-bottom: 10px !important;
+
+}
+
+.ck.ck-list, .ck.ck-dropdown__panel, .ck.ck-labeled-field-view>.ck.ck-labeled-field-view__input-wrapper>.ck.ck-label {
+    background: #1a202c !important;
+}
+
+.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable, .ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners {
+    border-radius: 5px !important;
+    background: #1a202c !important;
+    color: rgb(209 213 219 / 1) !important;
+    border: 1px solid #4a5568 !important;
+}

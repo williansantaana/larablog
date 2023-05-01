@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 /**
  * @method static create(array $input)
+ * @method static firstOrCreate(array $array)
  */
 class Tag extends Model
 {
@@ -18,6 +19,6 @@ class Tag extends Model
 
     public function posts(): BelongsToMany
     {
-        return $this->belongsToMany(Post::class, 'posts_tags');
+        return $this->belongsToMany(Post::class, 'post_tags');
     }
 }
