@@ -11,7 +11,8 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 /**
  * @method static create(array $input)
  * @method static find(mixed $id)
- * @method static where(string $string, $id)
+ * @method static select(string $string)
+ * @method static paginate(int $int)
  */
 class Post extends Model
 {
@@ -23,6 +24,7 @@ class Post extends Model
         'title',
         'content',
         'cover',
+        'active'
     ];
 
     public function user(): BelongsTo
